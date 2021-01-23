@@ -8,8 +8,8 @@ Steps
 1. Initialize NodeJS Project
 2. Initialize first view
 3. Create room ID
-
 4. Add ability to video own video
+
 5. Add ability to allow others to stream their video
 6. Add styling
 7. Add ability to create messages
