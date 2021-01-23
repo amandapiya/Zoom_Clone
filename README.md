@@ -44,3 +44,6 @@ Step 3.
 npm install uuid -- generates random, unqiue id for room code
 
 Step 4.
+
+Step 5.
+Socket.io  -- comminicate with server, server also communicates with you

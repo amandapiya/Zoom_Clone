@@ -2,7 +2,9 @@
 const express = require('express');
 const app = express();
 const server = require('http').Server(app);
+const io = require('socket.io')(server)
 const { v4: uuidV4 } = require('uuid'); 
+
 
 
 app.set('view engine', 'ejs'); // specifies to use ejs as view engine
@@ -19,6 +21,13 @@ app.get('/', (req, res) => {
 //create new room url
 app.get('/:room', (req, res) => {
     res.render('room', { roomId: req.params.room })
+})
+
+io.on('connection', socket => {
+    socket.on('join-room', (roomId) => {
+        socket.join(roomId);
+        socket.to(roomId).broadcast.emit('user-connected');
+    })
 })
 
 
