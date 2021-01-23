@@ -4,8 +4,9 @@ const app = express();
 const server = require('http').Server(app);
 const { v4: uuidV4 } = require('uuid'); 
 
-// specifies to use ejs as view engine
-app.set('view engine', 'ejs');
+
+app.set('view engine', 'ejs'); // specifies to use ejs as view engine
+app.use(express.static('public'));
 
 // url - root folder
 app.get('/', (req, res) => {
