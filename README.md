@@ -7,6 +7,7 @@ Technologies: Socket.io, NodeJS, PeerJS, UUID, Express Server
 Steps 
 1. Initialize NodeJS Project
 2. Initialize first view
+
 3. Create room ID
 4. Add ability to video own video
 5. Add ability to allow others to stream their video
@@ -34,4 +35,10 @@ npm install -g nodemon  -- -g installs globally
 
 
 Step 2. 
-room.ejs -- HTML file allows to pass variables to HTML
+room.ejs -- HTML file allows to pass variables from backend to frontend
+
+npm install ejs
+
+Step 3. 
+
+npm install uuid -- generates random, unqiue id for room code
