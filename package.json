@@ -1,0 +1,24 @@
+{
+  "name": "zoom_clone",
+  "version": "1.0.0",
+  "description": "Followed tutorial by Clever Programmer - https://www.youtube.com/watch?v=ZVznzY7EjuY",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amandapiya/Zoom_Clone.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/amandapiya/Zoom_Clone/issues"
+  },
+  "homepage": "https://github.com/amandapiya/Zoom_Clone#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.7"
+  }
+}
