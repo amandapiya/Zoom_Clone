@@ -47,3 +47,9 @@ Step 4.
 
 Step 5.
 Socket.io  -- comminicate with server, server also communicates with you
+npm install socket.io
+
+WEBRTC - Peer to peer connction, allows web browsers to communicate in real time
+npm install peer
+
+if a variable isn't made, sometimes js will automatically make one for you
