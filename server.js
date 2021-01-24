@@ -26,7 +26,7 @@ app.get('/:room', (req, res) => {
 })
 
 io.on('connection', socket => {
-    socket.on('join-room', (roomId, userId) => {
+    socket.on('join-room-zoom', (roomId, userId) => {
         socket.join(roomId)
         socket.to(roomId).broadcast.emit('user-connected', userId);
     })

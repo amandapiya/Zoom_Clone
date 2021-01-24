@@ -1,10 +1,106 @@
 #video-grid{
-    display: flex;
+    display: grid;
+
+    grid-template-columns: repeat(2, 160px);
+    grid-template-rows: 60px 60px;
+    grid-gap: 140px 100px;
+    grid-auto-flow: row;
+
     justify-content: center;
+
+    align-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    vertical-align: middle;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    top: 40%;
+    right: 5%;
+    
 }
 
-video{
-    height: 300px;
-    width: 400px;
-    object-fit: cover;
+
+/*Container*/
+#Dish {
+    display: grid;
+    align-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    top: 0px;
+    right: 0px;
 }
+
+/*Camera*/
+#Dish div {
+    position: relative;
+    vertical-align: middle;
+    align-self: center;
+    border-radius: 10px;
+    overflow: hidden;
+    display: inline-block;
+    box-shadow: 0px 12px 22px rgba(0, 0, 0, 0.4);
+    background: #fff;
+}
+
+
+/*Details (optional)*/ 
+/*Aspect Ratio Number*/  
+    #Dish div:after {
+        color: #aaa;
+        font-size: 13px;
+        font-family: Arial, Helvetica, sans-serif;
+        position: absolute;
+        bottom: 20px;
+        right: 23px;
+        font-weight: 100;
+        content: "4:3";
+        display: block;
+    }
+
+/*Gray Diagonal*/  
+#Dish div:before {
+    position: absolute;
+    height: 1px;
+    background: #ddd;
+    width: 100%;
+    transform: rotate(-37deg);
+    top: 50%;
+    font-weight: 100;
+    content: "4:3";
+    display: block;
+    ;
+}
+
+
+video{
+    height: 165px;
+    width: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 5px solid #FF8072;
+    ;
+}
+
+
+.div-wrapper img {
+    position: absolute;
+    right: 50px;
+    bottom: 10px;
+  }
+
+/*
+.div-wrapper {
+    vertical-align: bottom;
+    height: 25%;
+    width: 25%;
+}
+
+.div-wrapper img {
+    float: right;
+}*/

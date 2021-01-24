@@ -9,8 +9,8 @@ Steps
 2. Initialize first view
 3. Create room ID
 4. Add ability to video own video
-
 5. Add ability to allow others to stream their video
+
 6. Add styling
 7. Add ability to create messages
 8. Add mute button
@@ -53,3 +53,6 @@ WEBRTC - Peer to peer connction, allows web browsers to communicate in real time
 npm install peer
 
 if a variable isn't made, sometimes js will automatically make one for you
+
+Step 6. Styling 1:45:00 - 
+doing a different style for the hackathon
